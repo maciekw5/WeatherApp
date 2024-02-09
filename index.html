@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a31bed0062.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2 class="loading-title">Weather App</h2>
+        <img src="./img/weather.png" alt="" class="loading-img">
+        <div class="loading-bar"></div>
+    </div>
+
+    <div class="wrapper">
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+            type="module"></script>
+
+        <dotlottie-player src="https://lottie.host/90157644-ae34-4834-965a-ca00b0dfa546/hBfq4EKVwz.json"
+            background="transparent" speed="1" style="width: 250px; height: 100px;" loop autoplay></dotlottie-player>
+
+        <nav class="nav">
+            <div class="search-navbar">
+                <div class="input-box">
+                    <input id="city" type="text" class="input-box-input" required>
+                    <label class="input-box-label" for="city">City name:</label>
+                    <p class="warning"></p>
+                </div>
+                <button class="search-navbar__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+
+
+
+        <div class="main-info">
+            <h1 class="cityname">Warszawa</h1>
+
+
+            <div class="weather-animation">
+
+
+                <img src="./img/sun.png" title="storm icons" alt="" class="weather-icon">
+
+            </div>
+
+        </div>
+
+
+        <div class="weather-box">
+
+            <div class="weather-card weather-card-one">
+                <h2 class="weather-card-title">Min / Max</h2>
+                <div class="underline"></div>
+                <p class="weather weather-answer"><span class="min-temp"></span> <span class="max-temp"></span></p>
+            </div>
+
+            <div class="weather-card weather-card-two">
+                <h2 class="weather-card-title">Temperature</h2>
+                <div class="underline"></div>
+                <p class="temperature weather-answer"></p>
+            </div>
+
+            <div class="weather-card weather-card-three">
+                <h2 class="weather-card-title">Humidity</h2>
+                <div class="underline"></div>
+                <p class="humidity weather-answer"></p>
+            </div>
+
+
+            <div class="weather-card weather-card-four">
+                <h2 class="weather-card-title">Feels like</h2>
+                <div class="underline"></div>
+                <p class="feels-like weather-answer"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

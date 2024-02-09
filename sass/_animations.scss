@@ -1,0 +1,44 @@
+@keyframes blackbar {
+	0% {
+		width: 5rem;
+	}
+
+	50% {
+		width: 110%;
+	}
+
+	100% {
+		width: 5rem;
+	}
+}
+
+@keyframes hide {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	70% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	80% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	90% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+}
